@@ -3,29 +3,28 @@ addons:
   style_goodies: yes
 ---
 ## TP Docker
-à faire :
+###à faire :
 Utilisation de docker au sein d’une machine virtuelle virtualBox
-windows 10 et d’une vm Linux débina 9.1
+ vm Linux debian 8.9
 documentez la progression de votre travail avec le temps de
 réalisation pour chaque étape.
 à rendre un document pdf « nom-tp-docker.pdf :
-Forme:
+###Forme:
 - un sommaire
 - une entête et pied de page
 - numérotation des pages
 - aucune Impression écran
-Fond:
+##Fond:
 - Notez chaque étapes du déroulement du tp
 - Time line sur l’ensemble du tp ( heure début - heure fin)
 - Temps de réalisation par étapes
 - Présentez chaque commandes utilisés
 - Notez chaque résultat de commande
 Prérequis
-Une machine virtuelle virtualbox windows 10 64 bits
-image : \\192.168.10.108\ISO\fr_windows_10_n
-Une machine virtuelle virtualbox debian 9.1 sans environnement
+
+Une machine virtuelle virtualbox debian 8.9 sans environnement
 graphique
-image : \\192.168.10.108\ISO\Debian 9.1\
+image : \\192.168.10.108\ISO\Debian
 1 - Installation
 Réalisez les installations de VM en simultané
 Installation de docker sous Windows
@@ -48,10 +47,8 @@ Avec le profil administrateur (root)
 etc/os-release; echo "$ID")/gpg | apt-key add -
 # apt-key fingerprint 0EBFCD88
  # add-apt-repository \
- "deb [arch=amd64] https://download.docker.com/
-linux/$(. /etc/os-release; echo "$ID") \
- $(lsb_release -cs) \
- stable"
+ "deb [arch=amd64] http://download.docker.com/
+linux/debian $(lsb_release -cs) \stable"
 # apt-get update
 # apt-get install docker-ce
 2- Utilisation
