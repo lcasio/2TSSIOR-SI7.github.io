@@ -45,7 +45,7 @@ _Mode root_
     
 _Avec le profil administrateur (root)_
 
-    # apt-get install software-properties-common
+    # apt-get install software-properties-common apt-transport-https
     # add-apt-repository "deb [arch=amd64] http://download.docker.com/linux/debian $(lsb_release -cs) \stable"
     # apt-get update
     # apt-get install docker-ce
