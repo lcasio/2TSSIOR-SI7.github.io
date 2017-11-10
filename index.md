@@ -32,23 +32,12 @@ Téléchargez puis installez l’application docker pour
 windows
 https://store.docker.com/editions/community/docker-cedesktop-windows
 Installation de docker sous linux
-source :https://docs.docker.com/engine/installation/linux/
-docker-ce/debian/#set-up-the-repository
+source: https://docs.docker.com/engine/installation/linux/docker-ce/debian/#set-up-the-repository
+// 
 $ su // passage mode administrateur
 Avec le profil administrateur (root)
 # apt-get update
-# apt-get install \
- apt-transport-https \
- ca-certificates \
- curl \
- gnupg2 \
- software-properties-common
-# curl -fsSL https://download.docker.com/linux/$(. /
-etc/os-release; echo "$ID")/gpg | apt-key add -
-# apt-key fingerprint 0EBFCD88
- # add-apt-repository \
- "deb [arch=amd64] http://download.docker.com/
-linux/debian $(lsb_release -cs) \stable"
+ # add-apt-repository "deb [arch=amd64] http://download.docker.com/linux/debian $(lsb_release -cs) \stable"
 # apt-get update
 # apt-get install docker-ce
 2- Utilisation
@@ -77,8 +66,15 @@ Server:
  OS/Arch: linux/amd64
  Experimental: true
 Utilisation sous linux
+
+https://docs.docker.com/get-started/
+
+
+
+
+--- nE PAS FAIRE --
+
 Réalisez le tutoriel
-http://imikado.developpez.com/tutoriels/mkframework/
-utilisationAvecDocker/
+http://imikado.developpez.com/tutoriels/mkframework/utilisationAvecDocker/
 Utilisation windows
 https://www.grafikart.fr/tutoriels/docker/hyper-v-643
