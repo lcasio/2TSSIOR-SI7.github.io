@@ -33,19 +33,25 @@ image : \\192.168.10.108\ISO\Debian
 Réalisez les installations de VM en simultané
 Installation de docker sous Windows
 Téléchargez puis installez l’application docker pour
-windows
-https://store.docker.com/editions/community/docker-cedesktop-windows
-Installation de docker sous linux
-source: https://docs.docker.com/engine/installation/linux/docker-ce/debian/#set-up-the-repository
-_Mode root_ 
-    $ su 
+[windows](https://store.docker.com/editions/community/docker-cedesktop-windows)
+
+## Installation de docker sous linux
+
+[source] (https://docs.docker.com/engine/installation/linux/docker-ce/debian/#set-up-the-repository)
+
+_Mode root_
+
+    $ su
+    
 _Avec le profil administrateur (root)_
+
     # apt-get update
     # add-apt-repository "deb [arch=amd64] http://download.docker.com/linux/debian $(lsb_release -cs) \stable"
     # apt-get update
     # apt-get install docker-ce
 
 ## 2- Utilisation
+
 L’utilisation des commandes devrait être semblable entre linux et
 windows. Notez le si il en est autrement.
 Accès à la documentation
